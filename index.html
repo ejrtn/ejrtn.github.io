@@ -23,7 +23,7 @@
         /* background: #111; */
         }
         .right_menu{
-            width: 1000px;
+            width: 300px;
             height: 100%;
             background-color: #c7c7c7;
             border-radius: 5px 0 0 5px;
@@ -37,7 +37,7 @@
             align-items: center;
         }
         .left_menu{
-            width: 1000px;
+            width: 300px;
             height: 100%;
             background-color: #c7c7c7;
             position: absolute;
@@ -50,20 +50,20 @@
             align-items: center;
         }
         .right{
-            width: 100px;
-            height: 200px;
+            width: 70px;
+            height: 150px;
             position: absolute;
             background-color: aqua;
             z-index: 9999;
-            left: -100px;
+            left: -70px;
         }
         .left{
-            width: 100px;
-            height: 200px;
+            width: 70px;
+            height: 150px;
             position: absolute;
             background-color: aqua;
             z-index: 9999;
-            right: -100px;
+            right: -70px;
         }
     </style>
     
@@ -268,17 +268,17 @@
 </body>
 <script>
     document.getElementsByClassName("right")[0].addEventListener("click",function(){
-        if(document.documentElement.style.cssText.includes("--right-move:-1000px;")){
+        if(document.documentElement.style.cssText.includes("--right-move:-300px;")){
             document.documentElement.style.setProperty("--right-move",'0px')
         }else{
-            document.documentElement.style.setProperty("--right-move",'-1000px')
+            document.documentElement.style.setProperty("--right-move",'-300px')
         }
     })
     document.getElementsByClassName("left")[0].addEventListener("click",function(){
-        if(document.documentElement.style.cssText.includes("--left-move:-1000px;")){
+        if(document.documentElement.style.cssText.includes("--left-move:-300px;")){
             document.documentElement.style.setProperty("--left-move",'0px')
         }else{
-            document.documentElement.style.setProperty("--left-move",'-1000px')
+            document.documentElement.style.setProperty("--left-move",'-300px')
         }
     })
 </script>
