@@ -374,12 +374,8 @@
         document.querySelector('.old-blok').innerHTML=t
         down_ing = true
     }
-
+    
     function clash_check(key,x,y,c,k){
-        if(y+bloks[key][c][0][0] === 0 || y+bloks[key][c][1][0] === 0 || y+bloks[key][c][2][0] === 0 || y+bloks[key][c][3][0] === 0){
-            alert("게임 오버")
-            return 0
-        }
         if(array_background[(y+bloks[key][c][0][0])][(x+bloks[key][c][0][1])]['data'] === 1
             || array_background[(y+bloks[key][c][1][0])][(x+bloks[key][c][1][1])]['data'] === 1
             || array_background[(y+bloks[key][c][2][0])][(x+bloks[key][c][2][1])]['data'] === 1
